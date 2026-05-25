@@ -134,10 +134,10 @@ async function notifyAdminHandoff(
     return;
   }
   const text = [
-    '🚨 มีลูกค้าขอคุยกับแอดมิน',
+    '[ลูกค้าขอคุยกับแอดมิน]',
     '',
-    `👤 ${displayName ?? '(ไม่ทราบชื่อ)'}`,
-    `🆔 ${lineUserId}`,
+    `ชื่อ: ${displayName ?? '(ไม่ทราบชื่อ)'}`,
+    `LINE ID: ${lineUserId}`,
     '',
     'เปิด LINE OA Manager → Chat tab เพื่อ reply ครับ',
   ].join('\n');
@@ -230,7 +230,7 @@ async function handleLeadStep(
       // confirm ผ่าน postback button เท่านั้น — ถ้าพิมพ์ตอบ ตีความว่าอยากแก้
       return {
         messages: [
-          textMessage('กรุณากดปุ่ม ✅ ยืนยัน หรือ ❌ ยกเลิก ในการ์ดด้านบนครับ'),
+          textMessage('กรุณากดปุ่ม "ยืนยัน" หรือ "ยกเลิก" ในการ์ดด้านบนครับ'),
         ],
       };
 
@@ -282,9 +282,9 @@ export async function submitLeadForm(
     await setMetadata(lineUserId, removeLeadDraft(user.metadata));
     return [
       textMessage(
-        '✅ บันทึกข้อมูลเรียบร้อยครับ ขอบคุณคุณ ' +
+        'บันทึกข้อมูลเรียบร้อยครับ ขอบคุณคุณ ' +
           draft.name +
-          ' มากครับ\n\nทีมงานจะติดต่อกลับโดยเร็วที่สุด (ภายใน 24 ชม. ในวันทำการ) 🙏',
+          ' มากครับ\n\nทีมงานจะติดต่อกลับโดยเร็วที่สุด (ภายใน 24 ชั่วโมงในวันทำการ)',
       ),
     ];
   } catch (err) {

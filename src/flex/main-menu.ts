@@ -4,7 +4,7 @@ import { POSTBACK_ACTIONS } from '../config/constants.js';
 export function mainMenuFlex(): messagingApi.FlexMessage {
   return {
     type: 'flex',
-    altText: '🏠 เมนูหลัก ZenityX',
+    altText: 'เมนูหลัก ZenityX',
     contents: {
       type: 'bubble',
       size: 'mega',
@@ -37,13 +37,13 @@ export function mainMenuFlex(): messagingApi.FlexMessage {
         contents: [
           {
             type: 'text',
-            text: 'สวัสดีครับ 👋',
+            text: 'สวัสดีครับ',
             weight: 'bold',
             size: 'lg',
           },
           {
             type: 'text',
-            text: 'ผมเป็นผู้ช่วยอัตโนมัติ พร้อมช่วยคุณ ลองเลือกจากเมนูด้านล่าง',
+            text: 'ผมเป็นผู้ช่วยอัตโนมัติ พร้อมช่วยคุณตอบคำถามและแนะนำคอร์ส เลือกได้จากเมนูด้านล่าง',
             wrap: true,
             size: 'sm',
             color: '#6b7280',
@@ -61,7 +61,7 @@ export function mainMenuFlex(): messagingApi.FlexMessage {
             color: '#10b981',
             action: {
               type: 'postback',
-              label: '📚 ดูคอร์สทั้งหมด',
+              label: 'ดูคอร์สทั้งหมด',
               data: POSTBACK_ACTIONS.COURSE_LIST,
               displayText: 'ดูคอร์สทั้งหมด',
             },
@@ -71,7 +71,7 @@ export function mainMenuFlex(): messagingApi.FlexMessage {
             style: 'secondary',
             action: {
               type: 'postback',
-              label: '🤖 ถาม AI',
+              label: 'ถาม AI',
               data: POSTBACK_ACTIONS.MODE_AI,
               displayText: 'เปลี่ยนไปคุยกับ AI',
             },
@@ -81,7 +81,7 @@ export function mainMenuFlex(): messagingApi.FlexMessage {
             style: 'secondary',
             action: {
               type: 'postback',
-              label: '📝 ติดต่อ/สมัครเรียน',
+              label: 'ติดต่อ/สมัครเรียน',
               data: POSTBACK_ACTIONS.LEAD_FORM_START,
               displayText: 'ติดต่อ/สมัครเรียน',
             },
@@ -91,7 +91,7 @@ export function mainMenuFlex(): messagingApi.FlexMessage {
             style: 'link',
             action: {
               type: 'postback',
-              label: '👤 คุยกับแอดมิน',
+              label: 'คุยกับแอดมิน',
               data: POSTBACK_ACTIONS.MODE_HUMAN,
               displayText: 'คุยกับแอดมิน',
             },

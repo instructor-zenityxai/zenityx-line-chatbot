@@ -8,17 +8,17 @@ const FALLBACK_IMAGE =
 export function courseDetailFlex(course: Course): messagingApi.FlexMessage {
   const infoRows: messagingApi.FlexComponent[] = [];
 
-  if (course.duration) infoRows.push(infoRow('⏱', 'ระยะเวลา', course.duration));
-  if (course.price) infoRows.push(infoRow('💰', 'ราคา', course.price));
-  if (course.format) infoRows.push(infoRow('📍', 'รูปแบบ', course.format));
-  if (course.location) infoRows.push(infoRow('🏢', 'สถานที่', course.location));
+  if (course.duration) infoRows.push(infoRow('ระยะเวลา', course.duration));
+  if (course.price) infoRows.push(infoRow('ราคา', course.price));
+  if (course.format) infoRows.push(infoRow('รูปแบบ', course.format));
+  if (course.location) infoRows.push(infoRow('สถานที่', course.location));
 
   const targetText = course.targetAudience?.length
-    ? course.targetAudience.map((t) => `• ${t}`).join('\n')
+    ? course.targetAudience.map((t) => `- ${t}`).join('\n')
     : null;
 
   const getText = course.whatYouGet?.length
-    ? course.whatYouGet.map((t) => `✓ ${t}`).join('\n')
+    ? course.whatYouGet.map((t) => `- ${t}`).join('\n')
     : null;
 
   const body: messagingApi.FlexComponent[] = [
@@ -60,7 +60,7 @@ export function courseDetailFlex(course: Course): messagingApi.FlexMessage {
       contents: [
         {
           type: 'text',
-          text: '🎯 เหมาะกับใคร',
+          text: 'เหมาะกับใคร',
           weight: 'bold',
           size: 'sm',
           color: '#111827',
@@ -86,7 +86,7 @@ export function courseDetailFlex(course: Course): messagingApi.FlexMessage {
       contents: [
         {
           type: 'text',
-          text: '✨ สิ่งที่จะได้รับ',
+          text: 'สิ่งที่จะได้รับ',
           weight: 'bold',
           size: 'sm',
           color: '#111827',
@@ -132,7 +132,7 @@ export function courseDetailFlex(course: Course): messagingApi.FlexMessage {
             color: '#10b981',
             action: {
               type: 'postback',
-              label: '📝 สมัครเรียนคอร์สนี้',
+              label: 'สมัครเรียนคอร์สนี้',
               data: `${POSTBACK_ACTIONS.LEAD_FORM_START}&interest=${encodeURIComponent(course.title)}`,
               displayText: `สมัคร ${course.title}`,
             },
@@ -142,7 +142,7 @@ export function courseDetailFlex(course: Course): messagingApi.FlexMessage {
             style: 'secondary',
             action: {
               type: 'uri',
-              label: '🔗 ดูในเว็บไซต์',
+              label: 'ดูในเว็บไซต์',
               uri: course.url,
             },
           },
@@ -151,7 +151,7 @@ export function courseDetailFlex(course: Course): messagingApi.FlexMessage {
             style: 'link',
             action: {
               type: 'postback',
-              label: '🔙 ดูคอร์สอื่น',
+              label: 'ดูคอร์สอื่น',
               data: POSTBACK_ACTIONS.COURSE_LIST,
               displayText: 'ดูคอร์สทั้งหมด',
             },
@@ -162,13 +162,12 @@ export function courseDetailFlex(course: Course): messagingApi.FlexMessage {
   };
 }
 
-function infoRow(emoji: string, label: string, value: string): messagingApi.FlexBox {
+function infoRow(label: string, value: string): messagingApi.FlexBox {
   return {
     type: 'box',
     layout: 'baseline',
     spacing: 'sm',
     contents: [
-      { type: 'text', text: emoji, size: 'sm', flex: 0 },
       { type: 'text', text: label, color: '#6b7280', size: 'sm', flex: 2 },
       { type: 'text', text: value, color: '#111827', size: 'sm', flex: 5, wrap: true },
     ],

@@ -3,8 +3,8 @@ import { POSTBACK_ACTIONS } from '../config/constants.js';
 
 export function welcomeFlex(displayName?: string | null): messagingApi.FlexMessage {
   const greet = displayName
-    ? `สวัสดีครับ คุณ${displayName} 🎉`
-    : 'สวัสดีครับ ยินดีต้อนรับ 🎉';
+    ? `สวัสดีครับ คุณ${displayName}`
+    : 'สวัสดีครับ ยินดีต้อนรับ';
 
   return {
     type: 'flex',
@@ -20,7 +20,7 @@ export function welcomeFlex(displayName?: string | null): messagingApi.FlexMessa
         contents: [
           {
             type: 'text',
-            text: '🎉 ยินดีต้อนรับสู่',
+            text: 'ยินดีต้อนรับสู่',
             color: '#d1fae5',
             size: 'sm',
           },
@@ -55,7 +55,7 @@ export function welcomeFlex(displayName?: string | null): messagingApi.FlexMessa
           },
           {
             type: 'text',
-            text: 'ผมเป็นผู้ช่วยอัตโนมัติของ ZENITYX ช่วยตอบคำถามและแนะนำคอร์สได้ 24 ชม. ครับ',
+            text: 'ผมเป็นผู้ช่วยอัตโนมัติของ ZENITYX พร้อมตอบคำถามและแนะนำคอร์สตลอด 24 ชั่วโมงครับ',
             wrap: true,
             size: 'sm',
             color: '#6b7280',
@@ -72,13 +72,13 @@ export function welcomeFlex(displayName?: string | null): messagingApi.FlexMessa
             contents: [
               {
                 type: 'text',
-                text: '✨ สิ่งที่ผมช่วยได้',
+                text: 'สิ่งที่ผมช่วยได้',
                 weight: 'bold',
                 size: 'sm',
               },
               {
                 type: 'text',
-                text: '• แนะนำคอร์สที่เหมาะกับคุณ\n• ตอบคำถามทั่วไป\n• เก็บข้อมูลให้ทีมติดต่อกลับ\n• สลับไปคุยกับแอดมินได้',
+                text: '- แนะนำคอร์สที่เหมาะกับคุณ\n- ตอบคำถามทั่วไปเกี่ยวกับสถาบัน\n- เก็บข้อมูลให้ทีมงานติดต่อกลับ\n- สลับไปคุยกับแอดมินตัวจริงได้',
                 wrap: true,
                 size: 'sm',
                 color: '#6b7280',
@@ -98,7 +98,7 @@ export function welcomeFlex(displayName?: string | null): messagingApi.FlexMessa
             color: '#10b981',
             action: {
               type: 'postback',
-              label: '📚 ดูคอร์สทั้งหมด',
+              label: 'ดูคอร์สทั้งหมด',
               data: POSTBACK_ACTIONS.COURSE_LIST,
               displayText: 'ดูคอร์สทั้งหมด',
             },
@@ -108,7 +108,7 @@ export function welcomeFlex(displayName?: string | null): messagingApi.FlexMessa
             style: 'secondary',
             action: {
               type: 'postback',
-              label: '🤖 ถาม AI',
+              label: 'ถาม AI',
               data: POSTBACK_ACTIONS.MODE_AI,
               displayText: 'คุยกับ AI',
             },

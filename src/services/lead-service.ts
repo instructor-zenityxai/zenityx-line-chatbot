@@ -71,13 +71,13 @@ async function notifyLineGroup(lead: {
   }
 
   const text = [
-    '🔔 มี Lead ใหม่จาก LINE Bot',
+    '[LEAD ใหม่จาก LINE Bot]',
     '',
-    `👤 ชื่อ: ${lead.name}`,
-    `📞 เบอร์: ${lead.phone}`,
-    `📧 อีเมล: ${lead.email ?? '(ไม่ระบุ)'}`,
-    `🎯 สนใจ: ${lead.interest ?? '-'}`,
-    lead.line_user_id ? `🆔 LINE: ${lead.line_user_id}` : '',
+    `ชื่อ: ${lead.name}`,
+    `เบอร์: ${lead.phone}`,
+    `อีเมล: ${lead.email ?? '(ไม่ระบุ)'}`,
+    `สนใจ: ${lead.interest ?? '-'}`,
+    lead.line_user_id ? `LINE ID: ${lead.line_user_id}` : '',
   ]
     .filter(Boolean)
     .join('\n');

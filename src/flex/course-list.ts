@@ -32,7 +32,7 @@ export function courseListMessages(
   const messages: messagingApi.Message[] = [
     {
       type: 'text',
-      text: `📚 ZENITYX มี ${courses.length} คอร์สครับ — เลื่อนดูได้เลย (แบ่ง ${chunks.length} ชุด)`,
+      text: `ZENITYX มี ${courses.length} คอร์สครับ เลื่อนดูได้เลย (แบ่งเป็น ${chunks.length} ชุด)`,
     },
     ...chunks.map((chunk, idx) =>
       courseListCarousel(chunk, `ชุดที่ ${idx + 1}/${chunks.length}`),
@@ -47,7 +47,7 @@ export function courseListCarousel(
 ): messagingApi.FlexMessage {
   return {
     type: 'flex',
-    altText: `📚 คอร์ส ZENITYX${altSuffix ? ` (${altSuffix})` : ''} ${courses.length} ตัว`,
+    altText: `คอร์ส ZENITYX${altSuffix ? ` (${altSuffix})` : ''} ${courses.length} ตัว`,
     contents: {
       type: 'carousel',
       contents: courses.slice(0, MAX_BUBBLES_PER_CAROUSEL).map((c) => courseBubble(c)),
@@ -125,7 +125,7 @@ function courseBubble(course: Course): messagingApi.FlexBubble {
           style: 'secondary',
           action: {
             type: 'postback',
-            label: '📝 สมัครเรียน',
+            label: 'สมัครเรียน',
             data: `${POSTBACK_ACTIONS.LEAD_FORM_START}&interest=${encodeURIComponent(course.title)}`,
             displayText: `สมัคร ${course.title}`,
           },

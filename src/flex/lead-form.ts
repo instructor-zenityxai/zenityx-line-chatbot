@@ -16,12 +16,12 @@ export function leadFormPromptText(draft: LeadDraft): messagingApi.TextMessage {
     case 'name':
       return {
         type: 'text',
-        text: '📝 ติดต่อ/สมัครเรียน\n\nกรุณาพิมพ์ชื่อของคุณครับ\n(หรือพิมพ์ "ยกเลิก" เพื่อยกเลิก)',
+        text: 'ติดต่อ/สมัครเรียน\n\nกรุณาพิมพ์ชื่อของคุณครับ\n(หากต้องการยกเลิก พิมพ์ "ยกเลิก")',
       };
     case 'phone':
       return {
         type: 'text',
-        text: `ขอบคุณคุณ ${draft.name} ครับ 😊\n\nรบกวนพิมพ์เบอร์โทรศัพท์ที่ติดต่อได้ครับ`,
+        text: `ขอบคุณคุณ ${draft.name} ครับ\n\nรบกวนพิมพ์เบอร์โทรศัพท์ที่ติดต่อได้ครับ`,
       };
     case 'email':
       return {
@@ -31,7 +31,7 @@ export function leadFormPromptText(draft: LeadDraft): messagingApi.TextMessage {
     case 'interest':
       return {
         type: 'text',
-        text: 'เกือบเสร็จแล้วครับ ✨\n\nสนใจคอร์สไหนเป็นพิเศษ? กดเลือกได้เลยครับ',
+        text: 'เกือบเสร็จแล้วครับ\n\nสนใจคอร์สไหนเป็นพิเศษ? กดเลือกได้เลยครับ',
         quickReply: { items: [] }, // จะถูก override ใน leadInterestQuickReply
       };
     case 'confirm':
@@ -77,7 +77,7 @@ export function leadInterestQuickReply(
 
   return {
     type: 'text',
-    text: 'เกือบเสร็จแล้วครับ ✨\n\nสนใจคอร์สไหนเป็นพิเศษ? กดเลือกได้เลยครับ',
+    text: 'เกือบเสร็จแล้วครับ\n\nสนใจคอร์สไหนเป็นพิเศษ? กดเลือกได้เลยครับ',
     quickReply: { items },
   };
 }
@@ -95,7 +95,7 @@ export function leadConfirmFlex(draft: LeadDraft): messagingApi.FlexMessage {
         contents: [
           {
             type: 'text',
-            text: '📋 ยืนยันข้อมูล',
+            text: 'ยืนยันข้อมูล',
             weight: 'bold',
             size: 'xl',
             color: '#111827',
@@ -129,7 +129,7 @@ export function leadConfirmFlex(draft: LeadDraft): messagingApi.FlexMessage {
             color: '#10b981',
             action: {
               type: 'postback',
-              label: '✅ ยืนยัน ส่งให้ทีม',
+              label: 'ยืนยัน ส่งให้ทีม',
               data: POSTBACK_ACTIONS.LEAD_FORM_SUBMIT,
               displayText: 'ยืนยันข้อมูล',
             },
@@ -139,7 +139,7 @@ export function leadConfirmFlex(draft: LeadDraft): messagingApi.FlexMessage {
             style: 'secondary',
             action: {
               type: 'postback',
-              label: '❌ ยกเลิก',
+              label: 'ยกเลิก',
               data: POSTBACK_ACTIONS.LEAD_CANCEL,
               displayText: 'ยกเลิก',
             },

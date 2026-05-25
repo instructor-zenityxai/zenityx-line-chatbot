@@ -20,10 +20,10 @@ export async function sendLeadEmail(lead: LeadEmailPayload): Promise<void> {
     return;
   }
 
-  const subject = `🔔 [ZenityX Lead] ${lead.name} สนใจ ${lead.interest ?? 'คอร์ส'}`;
+  const subject = `[ZenityX Lead] ${lead.name} สนใจ ${lead.interest ?? 'คอร์ส'}`;
   const html = `
     <div style="font-family:sans-serif;max-width:560px;padding:20px;">
-      <h2 style="color:#10b981;margin:0 0 16px;">🎯 มี Lead ใหม่จาก LINE Bot</h2>
+      <h2 style="color:#10b981;margin:0 0 16px;">Lead ใหม่จาก LINE Bot</h2>
       <table style="width:100%;border-collapse:collapse;">
         <tr><td style="padding:8px;background:#f3f4f6;width:120px;"><strong>ชื่อ</strong></td><td style="padding:8px;">${escapeHtml(lead.name)}</td></tr>
         <tr><td style="padding:8px;background:#f3f4f6;"><strong>เบอร์</strong></td><td style="padding:8px;">${escapeHtml(lead.phone)}</td></tr>

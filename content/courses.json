@@ -22,7 +22,12 @@
         "เข้าใจ workflow การทำคอนเทนต์ด้วย AI",
         "พร้อมไปต่อยอดสร้างรายได้"
       ],
-      "tags": ["content", "video", "creator", "marketing"]
+      "tags": [
+        "content",
+        "video",
+        "creator",
+        "marketing"
+      ]
     },
     {
       "id": "ai-creator-pro",
@@ -44,7 +49,12 @@
         "เข้าใจ AI tools ระดับโปร",
         "Workflow ที่ scale ได้"
       ],
-      "tags": ["creator", "viral", "video", "advanced"]
+      "tags": [
+        "creator",
+        "viral",
+        "video",
+        "advanced"
+      ]
     },
     {
       "id": "ai-agent-for-video-production",
@@ -65,7 +75,14 @@
         "ลดเวลาผลิตหลายเท่า",
         "Scale งานวิดีโอได้"
       ],
-      "tags": ["agent", "video", "production", "scale", "marketing"]
+      "tags": [
+        "agent",
+        "video",
+        "production",
+        "scale",
+        "marketing"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/05/ai-agent-video-production_1.webp"
     },
     {
       "id": "ai-agent-for-photography",
@@ -86,7 +103,13 @@
         "ผลงานสม่ำเสมอ scale ได้",
         "ประหยัดเวลา retouch"
       ],
-      "tags": ["agent", "photography", "product", "brand"]
+      "tags": [
+        "agent",
+        "photography",
+        "product",
+        "brand"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/05/ai-agent-photography_1.webp"
     },
     {
       "id": "ai-agent-for-graphic-design",
@@ -107,7 +130,13 @@
         "เข้าใจ AI design tools",
         "Workflow ที่ scale ได้"
       ],
-      "tags": ["agent", "graphic", "design", "visual"]
+      "tags": [
+        "agent",
+        "graphic",
+        "design",
+        "visual"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/05/ai-agent-graphic-design_1.webp"
     },
     {
       "id": "ai-for-corporate-office",
@@ -128,7 +157,13 @@
         "ใช้ AI ในงานออฟฟิศจริง",
         "ลดต้นทุน เพิ่มผลผลิต"
       ],
-      "tags": ["business", "office", "productivity", "in-house"]
+      "tags": [
+        "business",
+        "office",
+        "productivity",
+        "in-house"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/11/AI-for-Corporate-Office_web-819x1024.webp"
     },
     {
       "id": "ai-for-product-service",
@@ -149,7 +184,13 @@
         "Iterate ได้เร็ว",
         "Validate ตลาดเร็วขึ้น"
       ],
-      "tags": ["product", "business", "pm", "strategy"]
+      "tags": [
+        "product",
+        "business",
+        "pm",
+        "strategy"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/11/AI-for-Product-Service_web-819x1024.webp"
     },
     {
       "id": "ai-for-fashion-accessories",
@@ -170,7 +211,13 @@
         "ภาพ promo คุณภาพสูง",
         "Save cost ในการถ่ายแคตตาล็อก"
       ],
-      "tags": ["fashion", "accessories", "design", "marketing"]
+      "tags": [
+        "fashion",
+        "accessories",
+        "design",
+        "marketing"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/11/AI-for-Fashion-Accessories_web-819x1024.webp"
     },
     {
       "id": "ai-for-branding-and-marketing",
@@ -191,7 +238,13 @@
         "Campaign ทำเร็วและตรงกลุ่ม",
         "เข้าใจ data-driven brand building"
       ],
-      "tags": ["branding", "marketing", "strategy", "business"]
+      "tags": [
+        "branding",
+        "marketing",
+        "strategy",
+        "business"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/11/AI-for-Branding-Marketing_web-819x1024.webp"
     },
     {
       "id": "avatar-ai-mastery",
@@ -212,7 +265,13 @@
         "ลด cost ของ talent",
         "Scale คอนเทนต์วิดีโอได้"
       ],
-      "tags": ["avatar", "video", "ai", "scale"]
+      "tags": [
+        "avatar",
+        "video",
+        "ai",
+        "scale"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/12/S__6938729.webp"
     },
     {
       "id": "openclaw-ai-first-access",
@@ -233,7 +292,12 @@
         "เข้าใจวิธีออกแบบ workflow ด้วย AI",
         "นำไปใช้ในทีม/บริษัทได้ทันที"
       ],
-      "tags": ["productivity", "business", "automation"]
+      "tags": [
+        "productivity",
+        "business",
+        "automation"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/04/OpenClaw-AI-First-Access-825x1024.webp"
     },
     {
       "id": "first-vibe-coding-for-beginners",
@@ -254,7 +318,13 @@
         "เข้าใจ AI Coding (Vibe Coding) คืออะไร",
         "พื้นฐานต่อยอดไปคอร์ส Bot Vibe ได้"
       ],
-      "tags": ["coding", "beginner", "web", "app"]
+      "tags": [
+        "coding",
+        "beginner",
+        "web",
+        "app"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/04/First-Vibe-Coding-for-Beginners-825x1024.webp"
     },
     {
       "id": "bot-vibe-build-line-ai-bot",
@@ -308,7 +378,13 @@
         "ต่อยอด FAQ/Lead Capture/Information Bot ในองค์กรได้"
       ],
       "prerequisite": "ไม่ต้องเป็นโปรแกรมเมอร์ แต่ควรเคยใช้ AI พื้นฐาน หรือผ่าน First Vibe มา",
-      "tags": ["line-bot", "ai", "automation", "popular"]
+      "tags": [
+        "line-bot",
+        "ai",
+        "automation",
+        "popular"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/04/Bot-Vibe-Build-Your-LINE-AI-Bot-825x1024.webp"
     },
     {
       "id": "seedance-2-0-ai-first-access",
@@ -329,7 +405,13 @@
         "เข้าใจ workflow AI video รุ่นใหม่",
         "Output ระดับมืออาชีพ"
       ],
-      "tags": ["seedance", "video", "ai-tool", "first-access"]
+      "tags": [
+        "seedance",
+        "video",
+        "ai-tool",
+        "first-access"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/04/KV-3-820x1024.png"
     },
     {
       "id": "ai-creative-automation",
@@ -350,7 +432,13 @@
         "ลดเวลาผลิตคอนเทนต์",
         "ขยาย scale ทีมได้ง่ายขึ้น"
       ],
-      "tags": ["automation", "creative", "marketing", "team"]
+      "tags": [
+        "automation",
+        "creative",
+        "marketing",
+        "team"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2026/04/POSTER-NEW-FINAL-V2.webp"
     },
     {
       "id": "ai-for-property-architecture",
@@ -372,7 +460,13 @@
         "นำเสนอโปรเจกต์อย่างมืออาชีพ",
         "Workflow ออกแบบที่เร็วขึ้น"
       ],
-      "tags": ["property", "architecture", "design", "advanced"]
+      "tags": [
+        "property",
+        "architecture",
+        "design",
+        "advanced"
+      ],
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/11/AI-for-Property-Architecture_web-819x1024.webp"
     }
   ],
   "inHouseTraining": {
@@ -392,6 +486,13 @@
       "facebook": "https://facebook.com/zenityXAiStudio",
       "youtube": "https://youtube.com/@ZenityXAIStudio"
     },
-    "instructors": ["อ.บิ๊ก (อภิรักษ์)", "อ.ตฤณ", "อ.พิธ", "อ.มิกซ์", "อ.ณัฐ", "อ.เจมส์"]
+    "instructors": [
+      "อ.บิ๊ก (อภิรักษ์)",
+      "อ.ตฤณ",
+      "อ.พิธ",
+      "อ.มิกซ์",
+      "อ.ณัฐ",
+      "อ.เจมส์"
+    ]
   }
 }

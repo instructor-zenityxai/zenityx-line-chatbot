@@ -11,7 +11,7 @@ const server = app.listen(env.PORT, () => {
       env: env.NODE_ENV,
       model: env.ANTHROPIC_MODEL,
     },
-    `🤖 ZenityX LINE Chatbot listening on :${env.PORT}`,
+    `ZenityX LINE Chatbot listening on :${env.PORT}`,
   );
 });
 

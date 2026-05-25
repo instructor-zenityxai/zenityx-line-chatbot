@@ -40,30 +40,38 @@ export async function routeMessage(
 
   const trimmed = userText.trim();
   const lower = trimmed.toLowerCase();
-
-  // Lead form ปั่นอยู่ใน metadata.lead_draft → handle ก่อน
   const draft = getLeadDraft(user.metadata);
-  if (draft) {
-    if (lower === 'ยกเลิก' || lower === 'cancel') {
-      await setMetadata(lineUserId, removeLeadDraft(user.metadata));
-      return { messages: [textMessage('ยกเลิกการกรอกข้อมูลแล้วครับ'), mainMenuFlex()] };
-    }
-    return handleLeadStep(lineUserId, user.metadata, draft, trimmed);
-  }
 
-  // Special: reset to bot
+  // ===== Priority 1: Special keywords always override =====
+  // (rules out: lead form ค้าง + ทำให้ใช้ "เมนู"/"แอดมิน" ไม่ได้)
+
+  // Reset to bot — ยกเลิก lead form ด้วย ถ้ามี
   if (RESET_KEYWORDS.includes(lower)) {
+    const cleanedMeta = draft ? removeLeadDraft(user.metadata) : user.metadata;
+    if (draft) await setMetadata(lineUserId, cleanedMeta);
     if (user.current_mode !== MODES.BOT) {
       await setMode(lineUserId, MODES.BOT);
     }
     return { messages: [botModeEnterFlex(), mainMenuFlex()] };
   }
 
-  // Special: handoff to human
+  // Handoff to human — ยกเลิก lead form ด้วย
   if (HUMAN_HANDOFF_KEYWORDS.some((kw) => lower.includes(kw))) {
+    if (draft) await setMetadata(lineUserId, removeLeadDraft(user.metadata));
     await setMode(lineUserId, MODES.HUMAN);
     await notifyAdminHandoff(lineUserId, user.display_name ?? null);
     return { messages: [humanModeEnterFlex()] };
+  }
+
+  // Explicit cancel during lead form
+  if (draft && (lower === 'ยกเลิก' || lower === 'cancel')) {
+    await setMetadata(lineUserId, removeLeadDraft(user.metadata));
+    return { messages: [textMessage('ยกเลิกการกรอกข้อมูลแล้วครับ'), mainMenuFlex()] };
+  }
+
+  // ===== Priority 2: Continue lead form =====
+  if (draft) {
+    return handleLeadStep(lineUserId, user.metadata, draft, trimmed);
   }
 
   // Dispatch ตาม mode
@@ -96,12 +104,18 @@ export async function switchMode(
   lineUserId: string,
   toMode: 'bot' | 'ai' | 'human',
 ): Promise<messagingApi.Message[]> {
+  // ยกเลิก lead form ค้าง (ถ้ามี) — กัน mode switch ขัดกับ lead form
+  const user = await getUser(lineUserId);
+  if (user && getLeadDraft(user.metadata)) {
+    await setMetadata(lineUserId, removeLeadDraft(user.metadata));
+    logger.info({ lineUserId, toMode }, 'cleared lead draft on mode switch');
+  }
+
   await setMode(lineUserId, toMode);
   switch (toMode) {
     case 'ai':
       return [aiModeEnterFlex()];
     case 'human': {
-      const user = await getUser(lineUserId);
       await notifyAdminHandoff(lineUserId, user?.display_name ?? null);
       return [humanModeEnterFlex()];
     }

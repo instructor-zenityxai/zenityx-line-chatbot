@@ -1,0 +1,37 @@
+{
+  "name": "zenityx-line-chatbot",
+  "version": "0.1.0",
+  "description": "LINE Official Account chatbot สำหรับ ZenityX Studio — Bot + AI mode + handoff",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "deploy:richmenu": "tsx scripts/deploy-richmenu.ts",
+    "sync:knowledge": "tsx scripts/sync-knowledge.ts",
+    "db:migrate": "tsx scripts/db-migrate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@line/bot-sdk": "^9.5.0",
+    "@supabase/supabase-js": "^2.46.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "resend": "^4.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.17.0",
+    "sharp": "^0.34.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

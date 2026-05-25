@@ -1,0 +1,397 @@
+{
+  "$schema": "Source of truth สำหรับข้อมูลคอร์สทั้งหมด — Bot/AI ดึงจากนี่ • อัปเดต URL/ราคา/รอบเปิด ทีหลังได้",
+  "lastUpdated": "2026-05-25",
+  "courses": [
+    {
+      "id": "ai-content-workshop",
+      "title": "AI Content Workshop",
+      "tagline": "เปลี่ยนไอเดียเป็นวิดีโอสร้างรายได้ ภายในไม่กี่นาที",
+      "shortDescription": "สอนใช้ AI สร้างคอนเทนต์วิดีโอที่ทำเงินได้ — เน้นการลงมือทำจริง",
+      "url": "https://zenityxai.com/ai-content-workshop/",
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/11/Poster-AI-Content-Workshop-825x1024.webp",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ผู้ที่อยากเปลี่ยนไอเดียเป็นคอนเทนต์ที่สร้างรายได้",
+        "ครีเอเตอร์มือใหม่",
+        "นักการตลาดที่อยากใช้ AI ช่วยทำคอนเทนต์"
+      ],
+      "whatYouGet": [
+        "สร้างวิดีโอด้วย AI ได้ทันทีหลังจบคอร์ส",
+        "เข้าใจ workflow การทำคอนเทนต์ด้วย AI",
+        "พร้อมไปต่อยอดสร้างรายได้"
+      ],
+      "tags": ["content", "video", "creator", "marketing"]
+    },
+    {
+      "id": "ai-creator-pro",
+      "title": "AI Creator Pro",
+      "tagline": "สร้างวิดีโอไวรัลด้วย AI — จับสายตาคนใน 3 วินาที",
+      "shortDescription": "คอร์สเชิงลึกสำหรับครีเอเตอร์ — ใช้ AI สร้างวิดีโอที่มีโอกาส viral",
+      "url": "https://zenityxai.com/ai-creator-pro/",
+      "coverImage": "https://zenityxai.com/wp-content/uploads/2025/11/Poster-AI-Creator-Pro-825x1024.webp",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ครีเอเตอร์ที่อยากต่อยอดให้ทำเงินได้จริง",
+        "นักการตลาดที่อยากผลิตวิดีโอเชิงลึก",
+        "ทีมคอนเทนต์ของบริษัท"
+      ],
+      "whatYouGet": [
+        "สร้าง Viral Video ได้จริง",
+        "เข้าใจ AI tools ระดับโปร",
+        "Workflow ที่ scale ได้"
+      ],
+      "tags": ["creator", "viral", "video", "advanced"]
+    },
+    {
+      "id": "ai-agent-for-video-production",
+      "title": "AI Agent for Video Production",
+      "tagline": "ระบบผลิตวิดีโอจำนวนมาก สำหรับมาร์เก็ตติ้งและโปรโมชั่น",
+      "shortDescription": "ใช้ AI Agent ทำวิดีโอเป็น batch เพื่อ marketing/promotion ผลิตได้เยอะแบบมี quality",
+      "url": "https://zenityxai.com/ai-agent-for-video-production/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ครีเอเตอร์ที่ผลิตวิดีโอจำนวนมาก",
+        "นักการตลาดที่ทำ campaign หลายตัว",
+        "ผู้ประกอบการที่ใช้วิดีโอเป็นช่องทาง"
+      ],
+      "whatYouGet": [
+        "AI Agent workflow สำหรับวิดีโอ",
+        "ลดเวลาผลิตหลายเท่า",
+        "Scale งานวิดีโอได้"
+      ],
+      "tags": ["agent", "video", "production", "scale", "marketing"]
+    },
+    {
+      "id": "ai-agent-for-photography",
+      "title": "AI Agent for Photography",
+      "tagline": "ยกระดับงานถ่ายภาพ + รูปสินค้าให้สม่ำเสมอด้วย AI",
+      "shortDescription": "AI Agent ช่วยถ่ายภาพ retouch ภาพสินค้า ภาพ promotion ให้ผลงานสวยและสม่ำเสมอ",
+      "url": "https://zenityxai.com/ai-agent-for-photography/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ช่างภาพมืออาชีพ",
+        "แบรนด์ที่ต้องการรูปสินค้าสม่ำเสมอ",
+        "ทีมการตลาดที่ใช้ภาพถ่ายเยอะ"
+      ],
+      "whatYouGet": [
+        "Workflow ภาพสินค้า/promo ด้วย AI",
+        "ผลงานสม่ำเสมอ scale ได้",
+        "ประหยัดเวลา retouch"
+      ],
+      "tags": ["agent", "photography", "product", "brand"]
+    },
+    {
+      "id": "ai-agent-for-graphic-design",
+      "title": "AI Agent for Graphic Design",
+      "tagline": "ใช้ AI เป็นผู้ช่วยกราฟิกดีไซน์มืออาชีพ",
+      "shortDescription": "AI ช่วยออกแบบกราฟิกสำหรับหลาย format — banner, social, presentation",
+      "url": "https://zenityxai.com/ai-agent-for-graphic-design/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "นักออกแบบกราฟิก",
+        "ทีมการตลาดที่ทำคอนเทนต์ visual หลาย format",
+        "ฟรีแลนซ์ที่อยากเพิ่มงาน"
+      ],
+      "whatYouGet": [
+        "ทำกราฟิกได้หลาย format เร็วขึ้น",
+        "เข้าใจ AI design tools",
+        "Workflow ที่ scale ได้"
+      ],
+      "tags": ["agent", "graphic", "design", "visual"]
+    },
+    {
+      "id": "ai-for-corporate-office",
+      "title": "AI for Corporate & Office",
+      "tagline": "ลดขั้นตอน ลดต้นทุน เร่งความเร็วงานออฟฟิศประจำวัน",
+      "shortDescription": "ใช้ AI เพิ่มประสิทธิภาพงานในออฟฟิศ — รายงาน, อีเมล, การตัดสินใจ",
+      "url": "https://zenityxai.com/ai-for-corporate-office/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite / In-House",
+      "targetAudience": [
+        "ผู้บริหารและผู้จัดการ",
+        "พนักงานออฟฟิศที่ทำงานซ้ำ",
+        "ฟรีแลนซ์ที่อยากเพิ่ม productivity"
+      ],
+      "whatYouGet": [
+        "Workflow ลดงานซ้ำ",
+        "ใช้ AI ในงานออฟฟิศจริง",
+        "ลดต้นทุน เพิ่มผลผลิต"
+      ],
+      "tags": ["business", "office", "productivity", "in-house"]
+    },
+    {
+      "id": "ai-for-product-service",
+      "title": "AI for Product & Service",
+      "tagline": "ใช้ AI ออกแบบสินค้าและบริการให้ตอบโจทย์ลูกค้า",
+      "shortDescription": "เชื่อม AI กับการพัฒนา product/service เร่ง iteration + market validation",
+      "url": "https://zenityxai.com/ai-for-product-service/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ผู้ประกอบการ",
+        "นักการตลาด/PM",
+        "ทีมพัฒนา product"
+      ],
+      "whatYouGet": [
+        "เข้าใจการใช้ AI ใน product development",
+        "Iterate ได้เร็ว",
+        "Validate ตลาดเร็วขึ้น"
+      ],
+      "tags": ["product", "business", "pm", "strategy"]
+    },
+    {
+      "id": "ai-for-fashion-accessories",
+      "title": "AI for Fashion & Accessories",
+      "tagline": "ยกระดับงานแฟชั่น + โปรโมตสินค้าระดับมืออาชีพ",
+      "shortDescription": "ใช้ AI ในการออกแบบและทำการตลาดสินค้าแฟชั่น/เครื่องประดับ",
+      "url": "https://zenityxai.com/ai-for-fashion-accessories/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ผู้ประกอบการแฟชั่น",
+        "นักออกแบบเครื่องแต่งกาย/เครื่องประดับ",
+        "ทีมการตลาดของแบรนด์แฟชั่น"
+      ],
+      "whatYouGet": [
+        "Workflow AI สำหรับแฟชั่น",
+        "ภาพ promo คุณภาพสูง",
+        "Save cost ในการถ่ายแคตตาล็อก"
+      ],
+      "tags": ["fashion", "accessories", "design", "marketing"]
+    },
+    {
+      "id": "ai-for-branding-and-marketing",
+      "title": "AI for Branding and Marketing",
+      "tagline": "สร้างแบรนด์ใหม่ + ต่อยอดของเดิมด้วย AI",
+      "shortDescription": "ใช้ AI วาง brand strategy, คอนเทนต์, communication ที่ตรงกลุ่มเป้าหมาย",
+      "url": "https://zenityxai.com/ai-for-branding-and-marketing/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ผู้สร้างแบรนด์",
+        "นักการตลาด/นักวางแผนกลยุทธ์",
+        "ผู้ประกอบการที่อยากสร้างแบรนด์"
+      ],
+      "whatYouGet": [
+        "Brand strategy ที่ขับเคลื่อนด้วย AI",
+        "Campaign ทำเร็วและตรงกลุ่ม",
+        "เข้าใจ data-driven brand building"
+      ],
+      "tags": ["branding", "marketing", "strategy", "business"]
+    },
+    {
+      "id": "avatar-ai-mastery",
+      "title": "Avatar AI Mastery",
+      "tagline": "ลดต้นทุนการผลิตสื่อ คงคุณภาพระดับมืออาชีพ",
+      "shortDescription": "ใช้ Avatar AI สร้างคนเสมือนพูดในวิดีโอ — ลดเวลาและค่าใช้จ่ายในการถ่าย",
+      "url": "https://zenityxai.com/avatar-ai-mastery/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ผู้ประกอบการ/ครีเอเตอร์",
+        "นักการตลาด/ดีไซเนอร์",
+        "ฟรีแลนซ์ที่อยากผลิตวิดีโอประหยัด"
+      ],
+      "whatYouGet": [
+        "ใช้ Avatar AI ผลิตวิดีโอเองได้",
+        "ลด cost ของ talent",
+        "Scale คอนเทนต์วิดีโอได้"
+      ],
+      "tags": ["avatar", "video", "ai", "scale"]
+    },
+    {
+      "id": "openclaw-ai-first-access",
+      "title": "OpenClaw: AI First Access",
+      "tagline": "ลดงานซ้ำ เพิ่มประสิทธิภาพการทำงาน",
+      "shortDescription": "ใช้ AI เป็นตัวช่วยจัดการงานประจำ ลดเวลาทำงานซ้ำ ๆ ในออฟฟิศ",
+      "url": "https://zenityxai.com/openclaw-ai-first-access/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ผู้ประกอบการ/เจ้าของธุรกิจ",
+        "พนักงานออฟฟิศที่จัดการงานหลายขั้นตอน",
+        "ทีมงานที่อยากใช้ AI เพิ่ม productivity"
+      ],
+      "whatYouGet": [
+        "ลดเวลาทำงานซ้ำได้จริง",
+        "เข้าใจวิธีออกแบบ workflow ด้วย AI",
+        "นำไปใช้ในทีม/บริษัทได้ทันที"
+      ],
+      "tags": ["productivity", "business", "automation"]
+    },
+    {
+      "id": "first-vibe-coding-for-beginners",
+      "title": "First Vibe: Coding for Beginners",
+      "tagline": "พัฒนาเว็บไซต์/แอปด้วย AI — สำหรับมือใหม่",
+      "shortDescription": "คอร์สเริ่มต้นสร้างเว็บ/แอปด้วย AI ไม่ต้องมีพื้นฐานโค้ดมาก่อน",
+      "url": "https://zenityxai.com/first-vibe-coding-for-beginners/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "บุคคลทั่วไปที่อยากเริ่มสร้างเว็บ/แอปด้วย AI",
+        "เจ้าของธุรกิจที่อยากมีระบบดิจิทัลใช้เอง",
+        "ผู้ที่ไม่มีพื้นฐานเขียนโค้ด"
+      ],
+      "whatYouGet": [
+        "สร้างเว็บไซต์ / แอปง่าย ๆ ได้ด้วยตัวเอง",
+        "เข้าใจ AI Coding (Vibe Coding) คืออะไร",
+        "พื้นฐานต่อยอดไปคอร์ส Bot Vibe ได้"
+      ],
+      "tags": ["coding", "beginner", "web", "app"]
+    },
+    {
+      "id": "bot-vibe-build-line-ai-bot",
+      "title": "Bot Vibe: Build Your LINE AI Bot",
+      "tagline": "สร้าง LINE Bot อัตโนมัติเอง ใช้ AI ตอบลูกค้า",
+      "shortDescription": "สร้าง LINE Bot สำหรับธุรกิจ พร้อมเชื่อม AI ตอบจาก knowledge ของบริษัท — 7 ชั่วโมง 1 วัน",
+      "url": "https://zenityxai.com/bot-vibe-build-your-line-ai-bot/",
+      "duration": "7 ชั่วโมง (1 วัน, 10:00–17:00)",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite ที่ ZENITYX Studio",
+      "location": "171/2 ซ.ลาดพร้าว 53 (โชคชัย 4), กรุงเทพฯ",
+      "targetAudience": [
+        "ผู้ประกอบการ/เจ้าของธุรกิจที่ต้องการ LINE Bot ช่วยลดภาระงาน",
+        "ทีมงานองค์กรที่อยากใช้ AI จัดการ workflow",
+        "แอดมิน/ฝ่ายขาย/ฝ่ายบริการ ที่อยากมี Bot ตอบข้อมูล",
+        "ผู้ที่เคยเรียน First Vibe และอยากต่อยอด"
+      ],
+      "curriculum": [
+        {
+          "session": "ช่วงที่ 1 (เช้า 10:00–12:00): พื้นฐาน LINE Bot + AI",
+          "topics": [
+            "LINE Bot vs LINE Official Account ต่างกันยังไง",
+            "Flow การทำงาน: ส่ง→รับ→AI→ตอบ",
+            "รู้จัก LINE Developer Console",
+            "เชื่อม LINE กับ ChatGPT"
+          ]
+        },
+        {
+          "session": "ช่วงที่ 2 (บ่าย 13:00–15:00): Workshop สร้าง Bot",
+          "topics": [
+            "สร้าง LINE Developer Channel",
+            "เชื่อม Bot กับระบบของตัวเอง",
+            "ใช้ AI ช่วยเขียนระบบ (Vibe Coding)",
+            "Bot รับ-ตอบข้อความอัตโนมัติ"
+          ]
+        },
+        {
+          "session": "ช่วงที่ 3 (บ่าย 15:15–17:00): Knowledge Bot",
+          "topics": [
+            "ทำไม AI ทั่วไปอาจตอบไม่ตรงข้อมูลบริษัท",
+            "ทำให้ Bot ตอบจาก knowledge ของบริษัท",
+            "RAG พื้นฐาน",
+            "ทดสอบกับ ZENITYX SMART Bot"
+          ]
+        }
+      ],
+      "whatYouGet": [
+        "เข้าใจวิธีการทำงานของ LINE Bot",
+        "มี LINE Bot ของตัวเองที่ใช้งานได้",
+        "เข้าใจการทำ Knowledge Bot",
+        "ต่อยอด FAQ/Lead Capture/Information Bot ในองค์กรได้"
+      ],
+      "prerequisite": "ไม่ต้องเป็นโปรแกรมเมอร์ แต่ควรเคยใช้ AI พื้นฐาน หรือผ่าน First Vibe มา",
+      "tags": ["line-bot", "ai", "automation", "popular"]
+    },
+    {
+      "id": "seedance-2-0-ai-first-access",
+      "title": "Seedance 2.0: AI First Access",
+      "tagline": "ยกระดับคุณภาพวิดีโอ + เร่งการผลิตด้วย AI",
+      "shortDescription": "เรียนใช้ Seedance 2.0 — AI สำหรับสร้างวิดีโอโฆษณา/นำเสนอ ระดับมืออาชีพ",
+      "url": "https://zenityxai.com/seedance-2-0-ai-first-access/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ผู้ผลิตวิดีโอโฆษณา",
+        "ทีมการตลาดที่ทำ video content",
+        "ครีเอเตอร์ระดับมืออาชีพ"
+      ],
+      "whatYouGet": [
+        "ใช้ Seedance 2.0 ผลิตวิดีโอได้จริง",
+        "เข้าใจ workflow AI video รุ่นใหม่",
+        "Output ระดับมืออาชีพ"
+      ],
+      "tags": ["seedance", "video", "ai-tool", "first-access"]
+    },
+    {
+      "id": "ai-creative-automation",
+      "title": "AI Creative Automation",
+      "tagline": "ระบบทำงานครีเอทีฟอัตโนมัติ ผลิตงานคุณภาพ",
+      "shortDescription": "ออกแบบ workflow ครีเอทีฟด้วย AI — เหมาะสำหรับทีมคอนเทนต์/ครีเอเตอร์ระดับมือโปร",
+      "url": "https://zenityxai.com/ai-creative-automation/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "ครีเอเตอร์ที่อยาก scale",
+        "นักการตลาด/เจ้าของธุรกิจ",
+        "ทีมคอนเทนต์ขององค์กร"
+      ],
+      "whatYouGet": [
+        "Workflow ผลิตคอนเทนต์อัตโนมัติ",
+        "ลดเวลาผลิตคอนเทนต์",
+        "ขยาย scale ทีมได้ง่ายขึ้น"
+      ],
+      "tags": ["automation", "creative", "marketing", "team"]
+    },
+    {
+      "id": "ai-for-property-architecture",
+      "title": "AI for Property & Architecture",
+      "tagline": "ยกระดับการออกแบบสถาปัตย์/อสังหา ด้วย AI",
+      "shortDescription": "คอร์สเฉพาะทางสำหรับสถาปนิก/นักออกแบบ — นำเสนองาน/พัฒนาโปรเจกต์ด้วย AI",
+      "url": "https://zenityxai.com/ai-for-property-architecture/",
+      "duration": "TBD — สอบถามแอดมิน",
+      "price": "TBD — สอบถามแอดมิน",
+      "format": "Onsite",
+      "targetAudience": [
+        "สถาปนิก",
+        "นักออกแบบภายใน",
+        "ทีม Real Estate / Property",
+        "ดีไซเนอร์ที่อยาก present งานระดับโปร"
+      ],
+      "whatYouGet": [
+        "ใช้ AI สร้าง concept/visualization ได้",
+        "นำเสนอโปรเจกต์อย่างมืออาชีพ",
+        "Workflow ออกแบบที่เร็วขึ้น"
+      ],
+      "tags": ["property", "architecture", "design", "advanced"]
+    }
+  ],
+  "inHouseTraining": {
+    "title": "In-House Training",
+    "tagline": "อบรมในองค์กร พร้อมออกแบบหลักสูตรเฉพาะ",
+    "description": "ส่งวิทยากร ZENITYX ไปอบรมในบริษัทของคุณ พร้อมออกแบบหลักสูตรตาม use case จริง",
+    "contact": "admin@zenityxai.com / 062-262-9644"
+  },
+  "company": {
+    "brand": "ZENITYX",
+    "tagline": "ศูนย์กลาง AI ครบวงจร — เรียน AI แบบตัวต่อตัว จนถึงระดับองค์กร",
+    "website": "https://zenityxai.com",
+    "phone": "062-262-9644",
+    "email": "admin@zenityxai.com",
+    "address": "171/2 ซอย ลาดพร้าว 53 (โชคชัย 4) กรุงเทพมหานคร 10310",
+    "social": {
+      "facebook": "https://facebook.com/zenityXAiStudio",
+      "youtube": "https://youtube.com/@ZenityXAIStudio"
+    },
+    "instructors": ["อ.บิ๊ก (อภิรักษ์)", "อ.ตฤณ", "อ.พิธ", "อ.มิกซ์", "อ.ณัฐ", "อ.เจมส์"]
+  }
+}
